@@ -2,16 +2,15 @@
 <% if @post.empty? === false %>
   <% @post.each do |post| %>
     <% unless post.replies.length >= 10 %>
-      <div>
-        <h2><%= post.title %></h2>
-        <%= post.subject %><br>
-
+      <div class='allposts'>
+        <h2 class='post'><%= post.title %></h2>
+        <h3><%= post.subject %></h3><br>
         <% if current_user.id != post.user_id %>
           <form action='/newreply'>
               <button type="submit" title="<%= post.title %>" name='post' value="<%= post.id %>">Reply</button><br>
           </form>
         <% end %>
-      </div><br><br>
+      </div><br>
     <% end %>
   <% end %>
 <% else %>

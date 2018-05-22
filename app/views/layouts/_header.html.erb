@@ -1,15 +1,22 @@
-<div class='nav'>
-  <a href="/">Home</a>
-  <% if current_user %>
-    <%= link_to "Logout", '/logout' %>
-    <a href="/all">All Posts</a>
-      <% if current_user.posts.length != 0 %>
-        <a href="/usershow">Your Post</a>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Nav
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/">Home</a>
+      <% if current_user %>
+        <%= link_to "Logout", '/logout' %>
+        <a href="/all">All Posts</a>
+          <% if current_user.posts.length != 0 %>
+            <a href="/usershow">Your Post</a>
+          <% else %>
+            <a href="/newpost">New Post</a>
+        <% end %>
       <% else %>
-        <a href="/newpost">New Post</a>
-    <% end %>
-  <% else %>
-    <a href="/signup">Signup</a>
-    <a href="/login">Login</a>
-  <% end %>
+        <a href="/signup">Signup</a>
+        <a href="/login">Login</a>
+      <% end %>
+    </div>
+  </div>
 </div>

@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Wise Replies</title>
+    <link rel="shortcut icon" type="image/png" href="/images/reply3.jpg">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,10 +11,10 @@
 
   <body>
     <header>
-      <div>
-        <img id='wisereplies' src="/images/pickaside.jpg">
-      </div>
       <%= render 'layouts/header' %>
+      <div>
+        <img id='wisereplies' src="/images/wisereplies.jpg">
+      </div>
     </header>
     <%= yield %>
   </body>

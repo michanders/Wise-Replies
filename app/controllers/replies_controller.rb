@@ -1,6 +1,7 @@
 class RepliesController < ApplicationController
 
   def new
+    @current_post = Post.find_by_id(params[:post])
   end
 
   def index
