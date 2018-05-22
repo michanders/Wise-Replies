@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+    margin: auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+img#wisereplies {
+    width: 90%;
+}
+
+div.nav {
+ border-bottom: 2px dotted lightgrey;
+ max-width: 80%;
+ margin: auto;
+ padding-bottom: 2%
+}
+
+div.userpost, .postreply {
+  background-color: #0096ff;
+  max-width: 60%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+div.postreply, .usertitle {
+  background-color: #49ff1f;
+  max-width: 75%;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+div.usertitle {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+ width: 15%;
+ height: 25px;
+ margin: auto;
+ text-decoration: none;
+ text-align: center;
+ border-radius: 10px;
+ color: black;
+ background-color: lightgrey;
+ display: inline-block;
+}
+
+input#user_name, #user_email, #user_password,
+#user_password_confirmation, #post_title, #post_subject,
+#email, #password, #reply_content, #post_subject, button {
+ width: 30%;
+ margin: .5%;
+ height: 25px;
+ background-color: white;
+ border: 1px solid lightgrey;
+ box-shadow: 2px 2px 2px lightgrey;
+ text-align: center;
+ border-radius: 10px;
+}
+
+input#post_subject, #reply_content {
+  height: 50px;
+  word-wrap: break-word;;
+  word-break: break-all;
+}
+
+button {
+  width: 15%;
+  background-color: lightgrey;
+}
+
+input {
+  width: 100px;
+  height: 25px;
+  margin: 3px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+h3, h2 {
+  margin: auto;
+  padding: 5px;
+}
+
+h2 {
+
+}

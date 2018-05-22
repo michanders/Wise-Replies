@@ -1,0 +1,8 @@
+<br><br>
+
+<%= form_for :reply, url: '/reply' do |f| %>
+  <%= f.text_field :content, placeholder: "Reply", :autocomplete => :off %><br>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.hidden_field :post_id, :value => params[:post] %>
+  <%= f.submit "Submit" %>
+<% end %>

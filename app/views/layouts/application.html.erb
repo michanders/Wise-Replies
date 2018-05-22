@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wise Replies</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img id='wisereplies' src="/images/pickaside.jpg">
+      </div>
+      <%= render 'layouts/header' %>
+    </header>
+    <%= yield %>
+  </body>
+</html>

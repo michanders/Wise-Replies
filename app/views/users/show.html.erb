@@ -1,0 +1,17 @@
+<br>
+<%@posts.each do |post| %>
+  <div class='userpost'><br>
+    <div class='usertitle'>
+      <h2><%= post.title %></h2>
+      <h3><%= post.subject %></h3><br>
+    </div><br>
+      <% post.replies.each do |reply| %>
+    <div class='postreply'>
+      <%= reply.content %>
+    </div>
+    <% end %><br>
+    <form action='/delete'>
+        <button type="submit" title="<%= post.title %>" name='delete' value="<%= post.id %>">Delete</button><br>
+    </form><br>
+  </div><br>
+<% end %>
