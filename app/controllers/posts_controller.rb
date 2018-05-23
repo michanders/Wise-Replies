@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 
   def destroy
     Post.delete(params[:delete])
-    redirect_to '/usershow'
+    redirect_to posts_path
   end
 
   private

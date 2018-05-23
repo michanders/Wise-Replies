@@ -23,9 +23,16 @@ body {
   overflow: scroll;
 }
 
+.forms {
+  margin: auto;
+  width: 65%;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+}
+
 img#wisereplies {
-    width: 50%;
-    border-bottom: 2px dotted lightgrey;
+  width: 50%;
+  border-bottom: 2px solid lightgrey;
 }
 
 div.userpost, .postreply {
@@ -33,28 +40,31 @@ div.userpost, .postreply {
 }
 
 div.postreply, .usertitle {
-  max-width: 50%;
+  max-width: 65%;
   text-align: center;
 }
 
 .postreply {
-  border-left: 2px dotted #e9fd6f;
-  border-right: 2px dotted #e9fd6f;
+  border-left: 2px solid #e9fd6f;
+  border-right: 2px solid #e9fd6f;
+  border-bottom: 1px dotted lightgrey;
 }
 
 div.usertitle {
-  max-width: 50%;
+  max-width: 65%;
   margin: auto;
   text-align: center;
-  border-left: 2px dotted #06d2fc;
-  border-right: 2px dotted #06d2fc;
+  border-left: 2px solid #06d2fc;
+  border-right: 2px solid #06d2fc;
+  border-bottom: 1px dotted lightgrey;
 }
 
 .allposts {
-  max-width: 50%;
+  max-width: 65%;
   margin: auto;
-  border-left: 2px dotted #06d2fc;
-  border-right: 2px dotted #06d2fc;
+  border-left: 2px solid #06d2fc;
+  border-right: 2px solid #06d2fc;
+  border-bottom: 1px dotted lightgrey;
 }
 
 input#user_name, #user_email, #user_password,
@@ -96,18 +106,18 @@ h3, h2 {
 .welcome {
   text-align: center;
   width: 55%;
-  border-left: 2px dotted lightgrey;
-  border-right: 2px dotted lightgrey;
-  padding: 5%;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-h2.post {
+.post {
   text-decoration: underline;
 }
 
 .navbar {
 overflow: hidden;
-font-family: Arial;
 margin: 10px;
 position: fixed;
 width: 100%;
@@ -123,9 +133,7 @@ text-decoration: none;
 
 .dropdown {
 float: left;
-overflow: hidden;
 background-color: lightgray;
-border-radius: 5px;
 width: 10%;
 }
 
@@ -135,17 +143,20 @@ border: none;
 outline: none;
 font-family: inherit;
 width: 100%;
+border-radius: 0px;
+box-shadow: none;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
 background-color: #06d2fc;
+border-radius: 0px;
 }
 
 .dropdown-content {
 display: none;
 position: static;
 background-color: #f9f9f9;
-min-width: 160px;
+min-width: 155px;
 z-index: 1;
 }
 

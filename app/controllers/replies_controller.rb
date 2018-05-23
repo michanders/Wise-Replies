@@ -10,7 +10,7 @@ class RepliesController < ApplicationController
   def create
     reply = Reply.new(reply_params)
     reply.save
-    redirect_to user_path(current_user.id)
+    redirect_to posts_path
   end
 
   def show
